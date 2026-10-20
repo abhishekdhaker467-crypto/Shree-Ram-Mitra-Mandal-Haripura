@@ -14,7 +14,7 @@ import{initializeApp}from"https://www.gstatic.com/firebasejs/11.6.0/firebase-app
 import{getFirestore,collection,addDoc,getDocs,doc,getDoc,setDoc,query,orderBy,serverTimestamp}from"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
 import{getAuth,signInWithEmailAndPassword,signInAnonymously,onAuthStateChanged,signOut}from"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 /* Firebase Console > Project settings > Your apps से अपनी config भरें */
-const cfg={apiKey:"PASTE_API_KEY_HERE",authDomain:"PASTE_PROJECT_ID_HERE.firebaseapp.com",projectId:"PASTE_PROJECT_ID_HERE",storageBucket:"PASTE_PROJECT_ID_HERE.firebasestorage.app",messagingSenderId:"PASTE_MESSAGING_SENDER_ID_HERE",appId:"PASTE_APP_ID_HERE"};
+const cfg={apiKey:"AIzaSyCiZjCguSjJwUxvtYLQO6H5rOGGD23DStw",authDomain:"shri-ram-mitra-mandal-haripura.firebaseapp.com",projectId:"shri-ram-mitra-mandal-haripura",storageBucket:"shri-ram-mitra-mandal-haripura.firebasestorage.app",messagingSenderId:"612184135347",appId:"1:612184135347:web:0f7210aeef64cc9ac202c6"};
 const configured=cfg.apiKey!=="PASTE_API_KEY_HERE"&&cfg.projectId!=="PASTE_PROJECT_ID_HERE";let db,auth,adminUser=null;
 const $=id=>document.getElementById(id),say=(id,t)=>$(id).textContent=t;
 window.page=id=>{document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));$(id).classList.add("active");document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===id||(id==="join"&&b.dataset.page==="home")));if(id==="members")members();window.scrollTo(0,0)};
